@@ -1,0 +1,71 @@
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* 1. Background color and color */
+.container{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+/* 2. Borders */
+.borders-solid{
+    border: 1px solid black;
+}
+
+.borders-solid-bottom{
+    border-bottom: 1px dotted red;
+}
+
+.borders-solid-left-bottom{
+    border-left: 2px dashed blue;
+    border-bottom: 2px dashed blue;
+}
+
+/* 3. Pseudoclasses */
+
+.btn-enlarge{
+    width: auto;
+    background: blueviolet;
+    color: white;
+    transition: 0.5s background-color, 0.5s padding;
+}
+
+.btn-enlarge:hover{
+    padding: 20px 25px;
+    background-color: cornflowerblue;
+}
+
+.inputcls{
+    background-color: bisque;
+    outline: none;
+    transition: 0.5s background-color;
+}
+
+.inputcls:focus{
+    background-color: pink;
+}
+
+/* 4. Table */
+
+.tbl{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tbl-head{
+    background-color: blanchedalmond;
+}
+
+.tbl-body{
+    background-color: lavender;
+}
+
+.tbl-body td{
+    text-align: center;
+}
+
+.tbl-body td, .tbl-head th{
+    border: 1px solid blue;
+}
