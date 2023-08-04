@@ -29,7 +29,7 @@ body{
     width: auto;
     background: blueviolet;
     color: white;
-    transition: 0.5s background-color, 0.5s padding;
+    transition:  background-color 0.5s,  padding 0.5s;
 }
 
 .btn-enlarge:hover{
@@ -40,7 +40,7 @@ body{
 .inputcls{
     background-color: bisque;
     outline: none;
-    transition: 0.5s background-color;
+    transition:  background-color 0.5s;
 }
 
 .inputcls:focus{
@@ -69,3 +69,115 @@ body{
 .tbl-body td, .tbl-head th{
     border: 1px solid blue;
 }
+
+/*  */
+.form{
+    border: 1px solid blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+}
+
+.form-row{
+    width: 70%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row-label{
+    width: 30%;
+    text-align: right;
+}
+
+.form-row-input{
+    width: 70%;
+}
+
+.form-row-button{
+    margin: 0 auto;
+    background-color: blue;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.animations{
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.animations-loading{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    /* text-align: center; */
+    animation: _loading_ 2s infinite;
+}
+
+@keyframes _loading_ {
+    0%{
+        border-radius: 0;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 0;
+    }
+}
+
+.animations-position{
+    animation: _position_ 2s infinite;
+    width: 50px;
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+@keyframes _position_ {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(50px, 0px)
+    }
+    50%{
+        transform: translate(50px, 50px)
+    }
+    75%{
+        transform: translate(0px, 50px)
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+.animations-rotation{
+    animation: _rotate_ 1s infinite;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+}
+
+@keyframes _rotate_ {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(135deg);
+    } */
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
